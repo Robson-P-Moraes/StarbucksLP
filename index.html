@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Starbucks</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 
 </head>
 <body>
@@ -12,7 +12,7 @@
     <header>
         <div class="center">
             <div id="logo">
-                <img src="/assets/logo.png" alt="logotipo">
+                <img src="./assets/logo.png" alt="logotipo">
             </div>
             <nav>
                 <a href="#">Home</a>
@@ -25,13 +25,13 @@
     <main>
         
             <div class="imgBg">
-                <img src="/assets/img1.png" alt="" id="imgMaior" class="imgPrincipal">
+                <img src="./assets/img1.png" alt="" id="imgMaior" class="imgPrincipal">
 
                 <div class="socialMedia">
-                    <a href="https://facebook.com"><img src="/assets/facebook.png" alt=""></a>
-                    <a href="https://instagram.com"><img src="/assets/instagram.png
+                    <a href="https://facebook.com"><img src="./assets/facebook.png" alt=""></a>
+                    <a href="https://instagram.com"><img src="./assets/instagram.png
                         " alt=""></a>
-                    <a href="https://twitter.com"><img src="/assets/twitter.png" alt=""></a>
+                    <a href="https://twitter.com"><img src="./assets/twitter.png" alt=""></a>
                 </div>
             </div>
             
@@ -59,11 +59,21 @@
         </section>
 
         <section class="slide">
-            <img src="/assets/thumb1.png" alt="" class="thumb1" id="mudarImg1" onclick="img1()">
-            <img src="/assets/thumb2.png" alt="" class="thumb2" id="mudarImg2" onclick="img2()">
-            <img src="/assets/thumb3.png" alt="" class="thumb3" id="mudarImg3" onclick="img3()">
+
+            <button type="button" class="slide-btn" onclick="img1()" >
+                <img src="./assets/thumb1.png" alt="" class="thumb1" id="mudarImg1">
+            </button>
+
+            <button type="button" class="slide-btn" onclick="img2()">
+                <img src="./assets/thumb2.png" alt="" class="thumb2" id="mudarImg2" >
+            </button>
+
+            <button type="button" class="slide-btn" onclick="img3()">
+                <img src="./assets/thumb3.png" alt="" class="thumb3" id="mudarImg3" >
+            </button>
+            
         </section>
     </main>
-<script src="/js/js.js"></script>
+<script src="./js/js.js"></script>
 </body>
 </html>

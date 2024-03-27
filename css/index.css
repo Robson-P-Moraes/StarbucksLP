@@ -56,7 +56,6 @@ main {
     margin: 0 auto;
     position: relative;
     height: calc(100vh - 100px);
-    border: 1px solid red;
 }
 
 /* fim main */
@@ -72,7 +71,9 @@ main {
     border-radius: 50%;
     background-color: #017143;
 }
-
+.imgPrincipal {
+    max-width: 300px;
+}
 .socialMedia {
    position: absolute;
    top: 30vh;
@@ -93,6 +94,7 @@ main {
     top: 10px;
 }
 
+
 .cabecalho h1, h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 45px;
@@ -101,9 +103,7 @@ main {
     color: #017143;
     font-size: 55px;
 }
-#secText1,
-#secText2,
-#secText3 {
+#secText1 {
     max-width: 700px;
     font-family: sans-serif;
     font-size: 20px;
@@ -112,37 +112,33 @@ main {
     margin-top: 40px;
 }
 
-#secText1 h2,
-#secText2 h2,
-#secText3 h2{
+#secText1 h2{
     color: #017143;
     margin: 15px 0;
     font-size: 30px;
 }
 
-#secText2,
-#secText3 {
-    display: none;
-}
-.btnLearMore {
-    margin-top: 30px;
-    width: 180px;
-    padding: 15px 20px;
-    background-color: #017143;
-    border-radius: 20px;
-    box-shadow: 4px 0px 8px #060606;
+#secText1 {
+    margin-bottom: 50px;
 }
 
 .btn-saibaMais {
     text-decoration: none;
+    font-weight: bold;
     font-size: 20px;
     padding: 10px 20px;
     background-color: #017143;
     color: #f6f6f6;
     border-radius: 20px;
-    position: absolute;
-    bottom: 40px;
-    cursor: pointer;
+    box-shadow: 4px 0px 8px #060606;
+    display: block;
+    width: 150px;
+    bottom: -70vh;
+    position: inherit;
+}
+.btn-saibaMais:hover {
+    color: #017143;
+    background-color: #f6f6f6;
 }
 
 .slide {
@@ -155,6 +151,7 @@ main {
 .slide img {
     margin: 0 30px;
     width: 50px;
+    cursor: pointer;
 }
 .slide-btn {
     background-color: transparent;
